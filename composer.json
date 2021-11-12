@@ -1,0 +1,17 @@
+{
+    "name": "bradford-college/page-one-messenger",
+    "description": "Symfony Page One sms Notifier Bridge",
+    "type": "symfony-bridge",
+    "authors": [
+        {
+            "name": "Alex",
+            "email": "a.antrobus@bradfordcollege.ac.uk"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+      "php": ">= 7.2.5",
+      "symfony/http-client": "^4.3|^5.0",
+      "symfony/notifier": "^5.3"
+    }
+}
