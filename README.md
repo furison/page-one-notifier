@@ -35,6 +35,7 @@ Installation
         texter_transports:
             page-one: '%env(PAGE_ONE_DSN)%'
  ```
+ - Add the DSN (as above) to your `.env` file
  - Use it as described here:  https://symfony.com/doc/current/notifier.html#creating-sending-notifications but use `['sms']` as the type
  - Profit!
 
