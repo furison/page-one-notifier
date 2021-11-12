@@ -24,7 +24,7 @@ Installation
  - Add the following config in services:
  ```YAML
   services:
-    Appe\Notifier\PageOne\PageOneTransportFactory:
+    App\Notifier\PageOne\PageOneTransportFactory:
         parent: '@notifier.transport_factory.abstract'
         tags: ['texter.transport_factory']
  ```
