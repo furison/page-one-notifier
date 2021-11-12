@@ -16,7 +16,7 @@ use Symfony\Contracts\HttpClient\HttpClientInterface;
  */
 final class PageOneTransport extends AbstractTransport
 {
-    protected const HOST = 'www.oventus.com';
+    protected const HOST = 'www.oventus.com/rest/v1';
 
     private $user;
     private $passwd;
@@ -71,7 +71,7 @@ final class PageOneTransport extends AbstractTransport
         libxml_clear_errors();
 
         if (200 !== $statusCode && 201 !== $statusCode) {
-            if (strpos($content, '<') !==0) //handle non-xml response
+            if (strpos($content, '<?xml') !==0) //handle non-xml response
             {
               throw new TransportException(sprintf('Unable to send the SMS: "%s" (%s).', $content, $statusCode), $response);
             }
@@ -85,7 +85,7 @@ final class PageOneTransport extends AbstractTransport
         }
 
         $sentMessage = new SentMessage($message, (string) $this);
-        $sentMessage->setMessageId($xmlData['transactionId']);
+        $sentMessage->setMessageId($xmlData['transactionID']);
 
         return $sentMessage;
     }

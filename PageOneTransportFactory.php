@@ -9,7 +9,7 @@ use Symfony\Component\Notifier\Transport\TransportInterface;
 /**
  * @author Alex Antrobus <a.antrobus@bradfordcollege.ac.uk>
  */
-class PageOneTransportFactory implements AbstractTransportFactory
+class PageOneTransportFactory extends AbstractTransportFactory
 {
   public function create(Dsn $dsn): TransportInterface
   {

@@ -25,17 +25,17 @@ Installation
  ```YAML
   services:
     App\Notifier\PageOne\PageOneTransportFactory:
-      parent: '@notifier.transport_factory.abstract'
-      tags: ['texter.transport_factory']
+        parent: 'notifier.transport_factory.abstract'
+            tags: ['texter.transport_factory']
  ```
  - Add the following in the `notifier.yaml` file:
  ```YAML
   framework:
     notifier:
-      texter_transports:
-        page-one: '%env(PAGE_ONE_DSN)%'
+        texter_transports:
+            page-one: '%env(PAGE_ONE_DSN)%'
  ```
- - Use it as described here:  https://symfony.com/doc/current/notifier.html#creating-sending-notifications
+ - Use it as described here:  https://symfony.com/doc/current/notifier.html#creating-sending-notifications but use `['sms']` as the type
  - Profit!
 
 Resources
