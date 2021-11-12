@@ -6,6 +6,9 @@ use Symfony\Component\Notifier\Transport\AbstractTransportFactory;
 use Symfony\Component\Notifier\Transport\Dsn;
 use Symfony\Component\Notifier\Transport\TransportInterface;
 
+/**
+ * @author Alex Antrobus <a.antrobus@bradfordcollege.ac.uk>
+ */
 class PageOneTransportFactory implements AbstractTransportFactory
 {
   public function create(Dsn $dsn): TransportInterface

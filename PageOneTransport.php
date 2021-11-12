@@ -12,7 +12,7 @@ use Symfony\Contracts\HttpClient\Exception\TransportExceptionInterface;
 use Symfony\Contracts\HttpClient\HttpClientInterface;
 
 /**
- * @author André Matthies <matthiez@gmail.com>
+ * @author Alex Antrobus <a.antrobus@bradfordcollege.ac.uk>
  */
 final class PageOneTransport extends AbstractTransport
 {
