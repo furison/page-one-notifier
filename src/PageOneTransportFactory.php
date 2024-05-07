@@ -1,5 +1,5 @@
 <?php
-namespace App\Notifier\PageOne;
+namespace Furison\Notifier\PageOne;
 
 use Symfony\Component\Notifier\Exception\UnsupportedSchemeException;
 use Symfony\Component\Notifier\Transport\AbstractTransportFactory;
@@ -7,7 +7,7 @@ use Symfony\Component\Notifier\Transport\Dsn;
 use Symfony\Component\Notifier\Transport\TransportInterface;
 
 /**
- * @author Alex Antrobus <a.antrobus@bradfordcollege.ac.uk>
+ * @author Alex Antrobus <wierdgoku@gmail.com>
  */
 class PageOneTransportFactory extends AbstractTransportFactory
 {

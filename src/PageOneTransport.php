@@ -1,5 +1,5 @@
 <?php
-namespace App\Notifier\PageOne;
+namespace Furison\Notifier\PageOne;
 
 use Symfony\Component\Notifier\Exception\TransportException;
 use Symfony\Component\Notifier\Exception\UnsupportedMessageTypeException;
@@ -12,7 +12,7 @@ use Symfony\Contracts\HttpClient\Exception\TransportExceptionInterface;
 use Symfony\Contracts\HttpClient\HttpClientInterface;
 
 /**
- * @author Alex Antrobus <a.antrobus@bradfordcollege.ac.uk>
+ * @author Alex Antrobus <wierdgoku@gmail.com>
  */
 final class PageOneTransport extends AbstractTransport
 {

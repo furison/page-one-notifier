@@ -19,12 +19,11 @@ See your account info at https://www.pageone.co.uk/login
 
 Installation
 ------------
- - Add directory `Notifier\PageOne` in your src directory
  - Clone this repository
  - Add the following config in services:
  ```YAML
   services:
-    App\Notifier\PageOne\PageOneTransportFactory:
+    Furison\Notifier\PageOne\PageOneTransportFactory:
         parent: 'notifier.transport_factory.abstract'
             tags: ['texter.transport_factory']
  ```
